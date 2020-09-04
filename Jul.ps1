@@ -4,7 +4,5 @@ $script = @'
    $player
 '@
 
-try {
-    $bgPowerShell = [PowerShell]::Create()
-    $player = @($bgPowerShell.AddScript($script).Invoke())[0]
-}
+$bgPowerShell = [PowerShell]::Create()
+$player = @($bgPowerShell.AddScript($script).Invoke())[0]
