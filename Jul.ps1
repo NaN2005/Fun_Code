@@ -5,18 +5,6 @@ $script = @'
 '@
 
 try {
-    [console]::beep(350,300)
-    [console]::beep(350,300)
-    [console]::beep(350,300)
-    [console]::beep(400,300)
-    [console]::beep(450,800)
-    [console]::beep(400,700)
-    [console]::beep(350,300)
-    [console]::beep(450,300)
-    [console]::beep(400,300)
-    [console]::beep(400,300)
-    [console]::beep(350,300)
-    [console]::beep(350,800)
     $bgPowerShell = [PowerShell]::Create()
     $player = @($bgPowerShell.AddScript($script).Invoke())[0]
 }
