@@ -8,8 +8,3 @@ try {
     $bgPowerShell = [PowerShell]::Create()
     $player = @($bgPowerShell.AddScript($script).Invoke())[0]
 }
-finally {
-    Clear-Host
-    $player.Stop()
-    $bgPowerShell.Dispose()
-}
